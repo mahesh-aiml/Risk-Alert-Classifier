@@ -1,0 +1,11 @@
+group,model,train_accuracy,test_accuracy,precision,recall_minority,f1,auc_roc,TN,FP_typeI,FN_typeII,TP
+C_Baseline,Logistic Regression (baseline),0.9973,1.0,1.0,1.0,1.0,1.0,809,0,0,111
+D_Imbalance,LR + Under-Sampling,0.9943,0.9978,0.9823,1.0,0.9911,1.0,807,2,0,111
+D_Imbalance,LR + Over-Sampling,0.9954,0.9978,0.9823,1.0,0.9911,1.0,807,2,0,111
+D_Imbalance,LR + SMOTE,0.9954,0.9978,0.9823,1.0,0.9911,1.0,807,2,0,111
+D_Imbalance,LR + ADASYN,0.9954,0.9978,0.9823,1.0,0.9911,1.0,807,2,0,111
+E_Trees,Decision Tree (untuned),1.0,0.988,0.9464,0.955,0.9507,0.9738,803,6,5,106
+E_Trees,Random Forest (untuned),1.0,0.9978,1.0,0.982,0.9909,0.9999,809,0,2,109
+F_Tuned,Decision Tree (RandomSearch),0.9962,0.9848,0.9217,0.955,0.9381,0.9747,800,9,5,106
+F_Tuned,Random Forest (RandomSearch),0.9986,1.0,1.0,1.0,1.0,1.0,809,0,0,111
+F_Tuned,Random Forest (GridSearch),0.9989,0.9989,0.9911,1.0,0.9955,1.0,808,1,0,111

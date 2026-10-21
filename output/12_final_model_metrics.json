@@ -1,0 +1,13 @@
+{
+  "model": "Random Forest (RandomSearch)",
+  "threshold": 0.35,
+  "accuracy": 0.9924,
+  "precision": 0.9407,
+  "recall": 1.0,
+  "f1": 0.9694,
+  "auc_roc": 1.0,
+  "TN": 802,
+  "FP_typeI": 7,
+  "FN_typeII": 0,
+  "TP": 111
+}

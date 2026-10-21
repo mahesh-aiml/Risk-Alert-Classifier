@@ -1,0 +1,30 @@
+{
+  "DT_random": {
+    "min_samples_split": 2,
+    "min_samples_leaf": 2,
+    "max_depth": null,
+    "criterion": "gini",
+    "class_weight": null
+  },
+  "RF_random": {
+    "n_estimators": 150,
+    "min_samples_split": 20,
+    "min_samples_leaf": 1,
+    "max_features": "log2",
+    "max_depth": null,
+    "class_weight": "balanced"
+  },
+  "RF_grid": {
+    "class_weight": "balanced",
+    "max_depth": null,
+    "max_features": "log2",
+    "min_samples_leaf": 2,
+    "min_samples_split": 20,
+    "n_estimators": 150
+  },
+  "cv_f1": {
+    "DT_random": 0.930337065233617,
+    "RF_random": 0.977291084187636,
+    "RF_grid": 0.9784361686660538
+  }
+}
